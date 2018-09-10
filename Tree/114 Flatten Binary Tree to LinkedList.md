@@ -34,10 +34,11 @@
 	* 所以example的顺序是 `1, 2, 3, 4, 5, 6`
 * 那如果我想`反着`过来的话
 	* 顺序应该为 `6, 5, 4, 3, 2, 1`
+	* (其实recursion就像 `Bottom Up 这个感觉`)
 	* 可以通过 `v(right)`, `v(left)`, `node` 这个recursion来实现
 	* `glboal prev` 来keep track
 	 
-### Solution Recursion (1.0)
+### Solution Recursion (1.0) + Bottom Up 这种
 	   // 用一个global的prev来存每一次recursion的信息
 		private TreeNode prev = null; 
 		public void flatten(TreeNode root){
